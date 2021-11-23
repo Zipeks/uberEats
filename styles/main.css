@@ -36,15 +36,22 @@ body {
    margin: 0;
    padding: 0;
 }
+._8 {
+   width: 8px;
+}
+._16 {
+   width: 16px;
+}
+._24 {
+   width: 24px;
+}
 ._32 {
    width: 32px;
 }
 ._128 {
    width: 128px;
 }
-._24 {
-   width: 24px;
-}
+
 .bigSpacer {
    max-width: 722px;
    width: 100%;
@@ -106,4 +113,34 @@ button {
 }
 .mainSpacer {
    flex: 1 0 auto;
+}
+.flex {
+   display: flex;
+}
+
+
+.restaurantSearchWraper {
+   top: 0px;
+   left: 0px;
+   bottom: 0px;
+   right: 0px;
+   position: absolute;
+   align-items: center;
+   display: flex;
+}
+.restaurantSearch {
+   width: 100%;
+   padding: 0px 40px;
+   margin: 0px auto;
+   min-width: 1024px;
+   max-width: 1920px;
+   box-sizing: border-box;
+}
+.restaurantSearch > h1 {
+   max-width: 75%;
+   margin-bottom: 40px;
+   font-weight: 700;
+   line-height: 64px;
+   font-size: 52px;
+   
 }

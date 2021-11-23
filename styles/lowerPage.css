@@ -19,10 +19,11 @@
    margin-left: 0%;
    padding-left: 12px;
    padding-right: 12px;
-   width: 33%;
+   width: 32%;
    display: block;
    flex: 0 0 auto;
    margin-bottom: 24px;
+   cursor: pointer;
 }
 .imgCont {
    background-color: rgb(226, 226, 226);
@@ -51,4 +52,53 @@
    font-size: 16px;
    font-weight: 500;
    font-family: UberMoveText, sans-serif;
+}
+footer {
+   margin-top: 80px;
+   padding: 72px 0 88px;
+   background-color: #000;  
+}
+.footerCtn {
+   padding: 0px 40px;
+   margin: 0px auto;
+   min-width: 1024px;
+   max-width: 1920px;
+   box-sizing: border-box;
+}
+.appstores {
+   display: flex;
+   align-items: flex-start;
+   flex: 2 1 0%;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.logo {
+   margin-bottom: 64px;
+   height: 24px;
+   width: auto; 
+}
+.footerColumns {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 0%;
+}
+.footerColumns > ul  {
+   font-weight: normal;
+   font-size: 16px;
+   color: #FFF;
+   font-family: UberMoveText, sans-serif;
+   line-height: 24px;
+   list-style: none;
+}
+.appstores > img {
+   height: 40px;
+}
+.aInlist {
+   color: #FFF;
+   margin-bottom: 0px;
+   font-weight: normal;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   line-height: 24px;
 }

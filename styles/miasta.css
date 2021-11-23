@@ -1,0 +1,35 @@
+.listHeader {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+.listHeader > h2 {
+   line-height: 44px;
+   font-size: 36px;
+   font-weight: 700;
+   margin: 0;
+}
+.listHeader > a {
+   text-decoration: underline;
+   line-height: 20px;
+   font-size: 16px;
+   font-weight: 500;
+}
+.map {
+   max-width: 100%;
+   height: 360px;
+   margin-top: 24px;
+}
+.list {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(6, 1fr);
+   gap: 24px;
+   grid-auto-flow: column;
+   margin-top: 24px;
+}
+.listElements {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+}
