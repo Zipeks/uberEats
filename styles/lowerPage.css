@@ -1,0 +1,54 @@
+.lowerPage {
+   padding: 0px 40px;
+   margin: 0px auto;
+   min-width: 1024px;
+   max-width: 1920px;
+   box-sizing: border-box;
+}
+
+
+.addNewThings {
+   margin-bottom: 24px;
+   margin-right: -12px;
+   margin-left: -12px;
+   display: flex;
+   flex-wrap: nowrap;
+   box-sizing: border-box;
+}
+.newThing {
+   margin-left: 0%;
+   padding-left: 12px;
+   padding-right: 12px;
+   width: 33%;
+   display: block;
+   flex: 0 0 auto;
+   margin-bottom: 24px;
+}
+.imgCont {
+   background-color: rgb(226, 226, 226);
+   padding-top: 55.9702%;
+   width: 100%;
+   margin-bottom: 8px;
+   height: 0px;
+   position: relative;
+}
+.imgThing {
+   width: 100%;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+}
+.bigPThing {
+   font-size: 28px;
+   line-height: 26px;
+   font-weight: 700;
+}
+.smallPThing {
+   margin-top: 8px;
+   text-decoration: underline;
+   display: block;
+   line-height: 20px;
+   font-size: 16px;
+   font-weight: 500;
+   font-family: UberMoveText, sans-serif;
+}
