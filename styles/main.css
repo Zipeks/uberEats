@@ -5,7 +5,15 @@ body {
    margin: 0;
    height: 100%;
    color: #000;
-   font-family: UberMoveText, sans-serif;;
+   font-family: UberMoveText, sans-serif;
+   
+}
+.wrapper.active {
+   background: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(255, 255, 255, 0.7)
+        );
+   z-index: 9999;
 }
 .grey {
    background-color: var(--grey) ;
@@ -21,7 +29,7 @@ body {
    z-index: 1;
    right: 0px;
    display: flex;
-   background: transparent none repeat scroll 0% 0%;
+   background: transparent;
    height: 96px;
    margin: 0px auto;
    min-width: 1024px;
@@ -78,12 +86,13 @@ body {
    height: 24px;
    align-items: center;
    display: flex;
+   cursor: pointer;
 }
 .loginBtn {
    white-space: nowrap;
    background: var(--grey) none repeat scroll 0% 0%;
    border-radius: 500px;
-   padding: 12px 16px;
+   padding: 16px;
    justify-content: center;
    align-items: flex-end;
    width: auto;
@@ -116,7 +125,7 @@ button {
 }
 .mainImgCont {
    display: flex;
-   height: 75vh;
+   height: 100vh;
    background-color: #FFD7D2 ;
 }
 .mainSpacer {
@@ -166,6 +175,7 @@ button {
    padding: 10px 20px;
    line-height: 24px;
    position: relative;
+   
 }
 .wrapperInputRestaurant > div > svg {
    position: relative;
@@ -186,7 +196,8 @@ button {
    position: fixed;
    height: 30px;
    top: 25px;
-   left: 300px;
+   left: 350px;
+   width: 45%;
 }
 
 .searchBtn {
@@ -214,5 +225,6 @@ button {
 .scrolledFromTop {
    transition: 0.4s;
    position: fixed;
+   border-bottom: 3px  solid var(--grey);
    background: #FFF;
 }

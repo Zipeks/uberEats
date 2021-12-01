@@ -13,7 +13,11 @@ function topBar () {
    }
 }
 const inputRestaurant = document.querySelector(".wrapperInputRestaurant"); 
-const inpRest = document.querySelector(".inputRestaurant"); 
+const inpRest = document.querySelector(".inputRestaurant");
+
+
+//przy wężyszych rozdzielczościach przeskok jest za wcześnie
+//ale w czystym js ciężko to chyba inaczej zrobić z tego co znalazłem
 function attachRestSearch () {
    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       inputRestaurant.classList.add("inputResaurantScrollled");

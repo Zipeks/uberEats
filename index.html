@@ -9,13 +9,23 @@
    <link rel="stylesheet" href="styles/main.css">
    <link rel="stylesheet" href="styles/lowerPage.css">
    <link rel="stylesheet" href="styles/miasta.css">
+   <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 <body>
    <div class="wrapper">
+      <div class="sidebar">
+         <button class="loginSidebar">Zaloguj się</button>
+         <div>
+            <div>Utwórz konto firmowe</div>
+            <div>Dodaj swoją restaurację</div>
+            <div>Zarejestruj się, aby realizować dostawy</div>
+         </div>
+      </div>
+
       <header>
           <div class="relative">
                <div class="navBar">
-                  <button class="navBtn" ar>
+                  <button class="navBtnWrapper">
                      <svg class="navBtn ">
                         <path d="M19.167 3.333H.833v2.5h18.334v-2.5zm0 5.834H.833v2.5h18.334v-2.5zM.833 15h18.334v2.5H.833V15z"></path>
                      </svg>
@@ -271,8 +281,10 @@
       </main>
       <footer>
          <div class="footerCtn">
-            <div class="flex">
-               <img class="logo" src="img/brightLogo.svg">
+            <div class="logaStopka">
+               <div>
+                  <img class="logo" src="img/brightLogo.svg">
+               </div>
                <div style="display: flex;">
                   <div class="appstores">
                      <img src="img/appstore.svg" alt="Appstore">
@@ -282,6 +294,9 @@
                      <img src="img/googleplay.png" alt="Google Play">
                   </div>
                </div>
+            </div>
+
+            <div class="flex">
                <div class="footerColumns">
                   <ul>
                      <li>Pomoc</li>
@@ -313,6 +328,6 @@
       </footer>
    </div>
 <script src="script.js"></script>
-
+<script src="sidebar.js"></script>
 </body>
 </html>

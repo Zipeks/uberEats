@@ -58,12 +58,15 @@ footer {
    padding: 72px 0 88px;
    background-color: #000;  
 }
+
 .footerCtn {
+   margin: 0px 30px;
+   border-bottom: 2px solid var(--grey);
+   display: flex;
+   justify-content: space-between;
    padding: 0px 40px;
-   margin: 0px auto;
    min-width: 1024px;
    max-width: 1920px;
-   box-sizing: border-box;
 }
 .appstores {
    display: flex;
@@ -80,7 +83,6 @@ footer {
 .footerColumns {
    display: flex;
    flex-direction: column;
-   flex: 1 1 0%;
 }
 .footerColumns > ul  {
    font-weight: normal;
@@ -101,4 +103,19 @@ footer {
    display: flex;
    align-items: center;
    line-height: 24px;
+}
+.logaStopka {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:stretch;
+   height: 100%;
+}
+
+.footerColumns {
+   width: 100%;
+}
+
+.footerColumns > ul > li {
+   line-height: 36px;
 }
