@@ -12,6 +12,7 @@ body {
    min-width: 100%;
 }
 .navBar {
+   transition: 0.4s;
    z-index: 1;
    right: 0px;
    display: flex;
@@ -22,17 +23,20 @@ body {
    max-width: 1920px;
    position: absolute;
    align-items: center;
-   justify-content: space-between;
+   justify-content:left;
    box-sizing: border-box;
    left: 0px;
    top: 0px;
+   padding: 0px 40px;
+   min-width: 1024px;
+   max-width: 1920px;
 }
 .relative {
    position: relative;
 }
 .spacer {
    height: 1px;
-   flex-shrink: 1;
+   flex-shrink: 0;
    margin: 0;
    padding: 0;
 }
@@ -53,7 +57,7 @@ body {
 }
 
 .bigSpacer {
-   max-width: 722px;
+
    width: 100%;
    overflow: hidden;
    position: relative;
@@ -102,13 +106,12 @@ button {
    display: block;
 }
 
-
 .mainimg {
    object-fit: cover;
 }
 .mainImgCont {
    display: flex;
-   height: 100vh;
+   height: 75vh;
    background-color: #FFD7D2 ;
 }
 .mainSpacer {
@@ -142,5 +145,60 @@ button {
    font-weight: 700;
    line-height: 64px;
    font-size: 52px;
-   
+}
+.zamowienia {
+   display: flex;
+   justify-content: left;
+   max-width: 1920px;
+   flex-shrink: 0;
+}
+.wrapperInputRestaurant {
+   display: flex;
+   overflow: none;
+   background-color: #FFF;
+   height: 100%;
+   width: 400px;
+   padding: 10px 20px;
+   line-height: 24px;
+   position: relative;
+}
+.wrapperInputRestaurant > div > svg {
+   position: relative;
+   bottom: -2px;
+}
+.inputRestaurant {
+   border: none;
+   outline: none;
+   width: 100%;
+   font-size: 1.2rem;
+}
+.inputRestaurant::placeholder {
+   font-size: 1.2rem;
+}
+.searchBtn {
+   background: #000;
+   color: #FFF;
+   width: 200px;
+   height: 100%;
+   cursor: pointer;
+}
+
+.dostarczTeraz {
+   background: #FFF;
+   width: 200px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   padding: 0px 15px;
+}
+.dostarczTeraz div svg {
+   position: relative;
+   top: 12px;
+}
+
+
+.scrolledFromTop {
+   transition: 0.4s;
+   position: fixed;
+   background: #FFF;
 }
