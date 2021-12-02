@@ -41,7 +41,7 @@ body.active {
    background: transparent;
    height: 96px;
    margin: 0px auto;
-   min-width: 1024px;
+  
    max-width: 1920px;
    position: absolute;
    align-items: center;
@@ -50,8 +50,6 @@ body.active {
    left: 0px;
    top: 0px;
    padding: 0px 40px;
-   min-width: 1024px;
-   max-width: 1920px;
 }
 .relative {
    position: relative;
@@ -79,10 +77,24 @@ body.active {
 }
 
 .bigSpacer {
-
    width: 100%;
    overflow: hidden;
    position: relative;
+}
+@media (max-width:1024px) {
+   .bigSpacer {
+      width: auto;
+
+   }
+   .spacer._128 {
+      width: 0px
+   }
+   .navBar {
+      height: 45px;
+      padding: 0px 10px;
+
+      justify-content: space-between;
+   }
 }
 .bigSpacer > * {
    transition: transform 500ms ease 0s;
@@ -102,10 +114,12 @@ body.active {
    background: var(--grey) none repeat scroll 0% 0%;
    border-radius: 500px;
    padding: 16px;
+   display: flex;
    justify-content: center;
-   align-items: flex-end;
+   align-items: center;
    width: auto;
-   min-height: 56px;
+   font-size: 1rem;
+   height: 3.5rem;
    font-weight: 500;
    line-height: 24px;
    font-size: 18px;
@@ -140,10 +154,20 @@ button {
 .mainSpacer {
    flex: 1 0 auto;
 }
+@media (max-width:1024px)  {
+   .loginBtn {
+      font-size: 0.8rem;
+      height: 2rem;
+   } 
+   .mainimg1 {
+      display: none;
+   }
+   
+}
+
 .flex {
    display: flex;
 }
-
 
 .restaurantSearchWraper {
    top: 0px;
@@ -158,7 +182,7 @@ button {
    width: 100%;
    padding: 0px 40px;
    margin: 0px auto;
-   min-width: 1024px;
+
    max-width: 1920px;
    box-sizing: border-box;
 }
@@ -166,8 +190,8 @@ button {
    max-width: 75%;
    margin-bottom: 40px;
    font-weight: 700;
-   line-height: 64px;
-   font-size: 52px;
+   line-height: 4rem;
+   font-size: 3.2rem;
 }
 .zamowienia {
    display: flex;
@@ -175,18 +199,17 @@ button {
    max-width: 1920px;
    flex-shrink: 0;
 }
-.wrapperInputRestaurant {
+.wrapperPapperInputRestaurant {
    display: flex;
-   overflow: none;
-   background-color: #FFF;
-   height: 100%;
+
+   background-color: var(--grey);
    width: 500px;
    padding: 10px 20px;
    line-height: 24px;
    position: relative;
    
 }
-.wrapperInputRestaurant > div > svg {
+.wrapperInputRestaurant > div > div > svg {
    position: relative;
    bottom: -2px;
 }
@@ -195,6 +218,7 @@ button {
    outline: none;
    width: 100%;
    font-size: 1.2rem;
+   background-color: var(--grey);
 }
 .inputRestaurant::placeholder {
    font-size: 1.2rem;
@@ -203,12 +227,31 @@ button {
    background-color:var(--grey) ;
    z-index: 33;
    position: fixed;
-   height: 30px;
+   
    top: 25px;
    left: 350px;
    width: 45%;
 }
+@media (max-width:1024px) {
 
+   .restaurantSearch > h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+   }
+   .wrapperInputRestaurant {
+      max-width: 450px;
+      width: 60%;
+      left: 0px;
+      top: 0px;
+      margin: 0px;
+   }
+   .inputResaurantScrollled {
+      padding: 5px 10px;
+   }
+   .restaurantSearch {
+      padding: 0px 10px;
+   }
+}
 .searchBtn {
    background: #000;
    color: #FFF;
@@ -236,4 +279,42 @@ button {
    position: fixed;
    border-bottom: 3px  solid var(--grey);
    background: #FFF;
+}
+
+@media (max-width:1024px) {
+   .wrapper {
+      width: 100vw;
+   }
+   .zamowienia {
+      flex-direction: column;
+      width: 100vw;
+      gap: 5px;
+      overflow: visible;
+   }
+   .wrapperInputRestaurant {
+      width: 100%;
+      background-color: #FFF;
+   }
+   .restaurantSearch {
+
+      width: 100%;
+   }
+   .scrolledFromTop {
+      all: unset;
+   }
+   .dostarczTeraz {
+      max-width: 450px;
+      width: 100%;
+      font-size: 1.2rem;
+   }
+   .dostarczTeraz div svg {
+      top: 18px;
+   }
+   .searchBtn {
+      max-width: 450px;
+
+      width: 100%;
+      height: 60px;
+      font-size: 1.3rem;
+   }
 }

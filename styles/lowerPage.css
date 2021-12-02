@@ -1,11 +1,10 @@
 .lowerPage {
    padding: 0px 40px;
    margin: 0px auto;
-   min-width: 1024px;
+   
    max-width: 1920px;
    box-sizing: border-box;
 }
-
 
 .addNewThings {
    margin-bottom: 24px;
@@ -67,7 +66,7 @@ footer {
    display: flex;
    justify-content: space-between;
    height: 290px;
-   min-width: 1024px;
+
    max-width: 1920px;
 }
 .appstores {
@@ -144,14 +143,45 @@ footer {
 .toWhiteSvg {
    height: 16px;
    width: 16px;
+   margin-right: 10px;
 }
 .socialMedia {
    display: flex;
    justify-content: space-between;
    width: 100px;
 }
+.socialMedia > img {
+   cursor: pointer;
+}
 .usingInfo {
    justify-content: right;
    gap: 30px;
    color: white;
+}
+@media (max-width:1024px) {
+   .lowerPage {
+      width: 100vw;
+   }
+   .addNewThings {
+      flex-direction: column;
+   }
+   .newThing {
+      width: 100%;
+   }
+   .footerCtn {
+
+      flex-direction: column;
+      height: 100%;
+   }
+   .column {
+      flex-direction: column;
+      width: 100%;
+   }
+   .lowerPage {
+    
+      padding: 0px 15px;
+   }
+   .footerColumns > ul {
+      padding: 0px;
+   }
 }
