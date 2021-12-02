@@ -26,5 +26,4 @@ function attachRestSearch () {
       inputRestaurant.classList.remove("inputResaurantScrollled")
       inpRest.classList.remove("grey")
    }
-   console.log(inputRestaurant.scrollTop);
 }

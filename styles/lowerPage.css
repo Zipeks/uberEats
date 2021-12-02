@@ -55,23 +55,24 @@
 }
 footer {
    margin-top: 80px;
-   padding: 72px 0 88px;
+   padding: 54px 0 88px;
    background-color: #000;  
 }
-
-.footerCtn {
+.footerWrapper {
    margin: 0px 30px;
+
+}
+.footerCtn {
    border-bottom: 2px solid var(--grey);
    display: flex;
    justify-content: space-between;
-   padding: 0px 40px;
+   height: 290px;
    min-width: 1024px;
    max-width: 1920px;
 }
 .appstores {
    display: flex;
    align-items: flex-start;
-   flex: 2 1 0%;
    justify-content: space-between;
    flex-direction: column;
 }
@@ -95,27 +96,53 @@ footer {
 .appstores > img {
    height: 40px;
 }
-.aInlist {
+.aInList {
    color: #FFF;
    margin-bottom: 0px;
    font-weight: normal;
    font-size: 16px;
    display: flex;
    align-items: center;
-   line-height: 24px;
+   justify-content: left;
 }
+
 .logaStopka {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items:stretch;
-   height: 100%;
+   height: 250px;
+   flex: 2 1 0%;
 }
 
 .footerColumns {
-   width: 100%;
+   height: 250px;
+   width: 50vh;
 }
-
+.footerColumns > ul  {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
 .footerColumns > ul > li {
    line-height: 36px;
+}
+.footerInfo {
+   margin-top: 36px;
+   color: white;
+   justify-content: space-between;
+}
+.toWhite {
+   filter: invert(100%) sepia(13%) saturate(7493%) hue-rotate(165deg) brightness(122%) contrast(110%);
+   height: 16px;
+   width: 16px;
+}
+.toWhiteSvg {
+   height: 16px;
+   width: 16px;
+}
+.socialMedia {
+   display: flex;
+   justify-content: space-between;
+   width: 100px;
 }
