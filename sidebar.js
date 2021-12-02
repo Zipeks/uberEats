@@ -10,7 +10,7 @@ function mobileMenu () {
    sidebar.classList.add('active');
    wrapper.classList.add('active');
    body.classList.add('active');
-   dimmer.show();
+   dimmer.classList.add('active');
 }
 document.addEventListener('click', function(event) {
    const isClickInsideElement = navBtn.contains(event.target);
@@ -19,6 +19,6 @@ document.addEventListener('click', function(event) {
       sidebar.classList.remove('active');
       wrapper.classList.remove('active');
       body.classList.remove('active');
-      dimmer.hide();
+      dimmer.classList.remove('active');
    }
 });
