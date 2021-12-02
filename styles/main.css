@@ -8,12 +8,11 @@ body {
    font-family: UberMoveText, sans-serif;
    
 }
-.wrapper.active {
-   background: linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(255, 255, 255, 0.7)
-        );
-   z-index: 9999;
+
+.wrapper.active  {
+   z-index: 20;
+   filter: brightness(45%);
+   
 }
 .grey {
    background-color: var(--grey) ;

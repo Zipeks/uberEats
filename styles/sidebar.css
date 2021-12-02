@@ -4,11 +4,15 @@
    display: block;
    transition: all 0.3s ease-in-out;
    height: 100vh;
-   width: 300px;
+   width: 270px;
    background-color: #FFF;
    z-index: 30;
-   padding-left: 30px;
-   padding-top: 30px;
+   padding-left: 25px;
+   padding-top: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: space-between;
 }
 .sidebar.active {
    left: 0;
@@ -16,6 +20,68 @@
 .loginSidebar {
    background: #000;
    color: #FFF;
-   width: 85%;
-   height: 40px;
+   width: 90%;
+   height: 55px;
+   margin-bottom: 20px;
+   font-size: 1.2rem;
+}
+.sidebarLinks {
+   display: flex;
+   flex-direction: column;
+}
+.sidebarLinks > a {
+   margin-bottom: 20px;
+   font-weight: 600;
+   font-size: .875rem;
+}
+.sidebarLowerPart {
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   bottom: 70px;
+   gap: 15px;
+}
+.appLogo {
+   display: flex;
+   font-size: 1rem;
+   gap: 20px;
+   font-weight: 400;
+   align-items: center;
+   width: 100%;
+}
+.appLogo img {
+   height: 4rem;
+   width: 4rem;
+}
+.phoneBtn {
+   width: 80%;
+   display: flex;
+   color: #000;
+   justify-content: space-between;
+
+}
+.phoneBtn > div > a {
+   background-color: var(--grey);
+   border-radius: 15px;
+   font-size: 0.8rem;
+   height: 30px;
+   width: 100px;
+   font-weight: 600;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+}
+.svg {
+   height: 30px;
+   width: 30px;
+   position: relative;
+   top: 3px;
+   left: 5px;
+}
+.svg g > path{
+   width: 8px;
+   height: 8px;
+}
+.phoneBtn p {
+   margin: 0px;
 }
