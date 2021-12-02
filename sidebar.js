@@ -8,7 +8,6 @@ navBtn.addEventListener('click', mobileMenu);
 
 function mobileMenu () {
    sidebar.classList.add('active');
-   wrapper.classList.add('active');
    body.classList.add('active');
    dimmer.classList.add('active');
 }
@@ -17,7 +16,6 @@ document.addEventListener('click', function(event) {
    const isClick2 = sidebar.contains(event.target);
    if ((!isClickInsideElement) && (!isClick2)) {
       sidebar.classList.remove('active');
-      wrapper.classList.remove('active');
       body.classList.remove('active');
       dimmer.classList.remove('active');
    }

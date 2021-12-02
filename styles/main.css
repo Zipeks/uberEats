@@ -22,11 +22,7 @@ body.active {
  .dimmer.active {
     display: block;
  }
-.wrapper.active  {
-   z-index: 20;
-   filter: brightness(45%);
-   
-}
+
 .grey {
    background-color: var(--grey) ;
 }
@@ -35,6 +31,7 @@ body.active {
    flex-direction: column;
    position: relative;
    min-width: 100%;
+   z-index: 20;
 }
 .navBar {
    transition: 0.4s;
