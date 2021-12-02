@@ -132,6 +132,10 @@ footer {
    color: white;
    justify-content: space-between;
 }
+.footerInfo a:hover,
+.usingInfo a:hover {
+   text-decoration: underline;
+}
 .toWhite {
    filter: invert(100%) sepia(13%) saturate(7493%) hue-rotate(165deg) brightness(122%) contrast(110%);
    height: 16px;
@@ -145,4 +149,9 @@ footer {
    display: flex;
    justify-content: space-between;
    width: 100px;
+}
+.usingInfo {
+   justify-content: right;
+   gap: 30px;
+   color: white;
 }
