@@ -6,7 +6,7 @@ function checkscroll () {
    attachRestSearch();
 }
 function topBar () {
-   if (document.body.scrollTop > 0 || document.documentElement.scrollTop >0) {
+   if ((document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) && document.body.clientWidth >= 1024) {
       navBar.classList.add("scrolledFromTop");
    } else if (navBar.scrollTop == 0) {
       navBar.classList.remove("scrolledFromTop")

@@ -169,30 +169,59 @@ footer {
    gap: 30px;
    color: white;
 }
+.importantInfo {
+   gap: 30px;
+}
+.betweenListSpacer {
+   height: 80px;
+}
 @media (max-width:1024px) {
+   footer {
+      margin-top: 40px;
+   }
    .lowerPage {
       width: 100vw;
+   }
+   .betweenListSpacer {
+      height: 30px;
    }
    .addNewThings {
       flex-direction: column;
    }
    .newThing {
-      width: 100%;
+      width: 98%;
+      padding-left: 1%;
+      padding-right: 1%;
    }
    .footerCtn {
-
       flex-direction: column;
       height: 100%;
+   }
+   .socialMedia {
+      margin-bottom: 30px;
+   }
+   .footerInfo {
+      flex-direction: column;
    }
    .column {
       flex-direction: column;
       width: 100%;
    }
    .lowerPage {
-    
       padding: 0px 15px;
+   }
+   .footerColumns {
+      width: auto;
    }
    .footerColumns > ul {
       padding: 0px;
+   }
+   .importantInfo {
+      flex-direction: column;
+      gap: 10px;
+   }
+   .usingInfo {
+      flex-direction: column;
+      gap: 0px;
    }
 }

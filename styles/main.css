@@ -239,15 +239,16 @@ button {
    }
    .wrapperInputRestaurant {
       max-width: 450px;
-      width: 60%;
+      width: 100%;
       left: 0px;
       top: 0px;
       margin: 0px;
+      background: #FFF;
    }
    .inputResaurantScrollled {
-      padding: 5px 10px;
+      padding: 5px 3%;
       max-width: 1024px;
-
+      width: 94%;
    }
    .restaurantSearch {
       padding: 0px 10px;
@@ -283,6 +284,15 @@ button {
 }
 
 @media (max-width:1024px) {
+   .searchBtnWrapper {
+      max-width: 450px;
+   }
+   .searchBtn {
+      width: 100vw;
+      max-width: 450px;
+      height: 60px;
+      font-size: 1.3rem;
+   }
    .wrapper {
       width: 100vw;
    }
@@ -292,10 +302,7 @@ button {
       gap: 5px;
       overflow: visible;
    }
-   .wrapperInputRestaurant {
-      width: 100%;
-      background-color: #FFF;
-   }
+   
    .restaurantSearch {
       width: 100%;
       display: flex;
@@ -313,12 +320,6 @@ button {
    }
    .dostarczTeraz div svg {
       top: 18px;
-   }
-   .searchBtn {
-      width: 450px;
-
-      height: 60px;
-      font-size: 1.3rem;
    }
    .zamowienia {
       align-items: center;

@@ -38,7 +38,13 @@
    line-height: 24px;
    cursor: pointer;
 }
+.showAllCities {
+   display: none;
+}
 @media (max-width:1024px) {
+   .showAllCities {
+      display: block;
+   }
    .toHide {
       display: none;
    }
@@ -49,5 +55,14 @@
    }
    .map {
       width: 100vw;
+   }
+   .listHeader > a {
+      display: none;
+   }
+   .showAllCities a {
+      text-decoration: underline;
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: 500;
    }
 }
