@@ -20,8 +20,6 @@ const inputRestaurant = document.querySelector(".wrapperInputRestaurant");
 const inpRest = document.querySelector(".inputRestaurant");
 
 
-//przy wężyszych rozdzielczościach przeskok jest za wcześnie
-//ale w czystym js ciężko to chyba inaczej zrobić z tego co znalazłem
 function attachRestSearch () {
    const inputPosition = inputRestaurant.getBoundingClientRect();
    const dostarczTerazBtn = document.querySelector('.dostarczTeraz');
