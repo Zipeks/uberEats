@@ -154,16 +154,25 @@ button {
 .mainSpacer {
    flex: 1 0 auto;
 }
+.mainimgMobile {
+   display: none;
+   position: absolute;
+   width: 100%;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
 @media (max-width:1024px)  {
+   .mainimgMobile {
+      display: block;
+   }
    .loginBtn {
       font-size: 1rem;
       height: 2rem;
    } 
-   .mainimg1 {
-      display: none;
-   }
+   .mainimg1,
    .mainimg2 {
-      
+      display: none;
    }
    
 }
@@ -190,7 +199,7 @@ button {
    box-sizing: border-box;
 }
 .restaurantSearch > h1 {
-   max-width: 100%;
+   max-width: 92vw;
    margin-bottom: 40px;
    font-weight: 700;
    line-height: 4rem;
@@ -236,7 +245,7 @@ button {
 
 @media (max-width:1024px) {
    .restaurantSearchWraper {
-      height: 80vh;
+      height: 60vh;
    }
    .restaurantSearch > h1 {
       font-size: 2rem;
