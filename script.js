@@ -18,7 +18,7 @@ function topBar () {
 }
 const inputRestaurant = document.querySelector(".wrapperInputRestaurant"); 
 const inpRest = document.querySelector(".inputRestaurant");
-
+const wrapperPapper = document.querySelector(".wrapperPapperInputRestaurant");
 
 function attachRestSearch () {
    const inputPosition = inputRestaurant.getBoundingClientRect();
@@ -27,10 +27,14 @@ function attachRestSearch () {
    console.log(dostarczTerazBtnPosition.top);
    if (inputPosition.top <= 26 && dostarczTerazBtnPosition.top < 26) {
       inputRestaurant.classList.add("inputResaurantScrollled");
-      inpRest.classList.add("grey");
+      inpRest.style.backgroundColor = "var(--grey)";
+      inputRestaurant.style.backgroundColor = "var(--grey)";
+      wrapperPapper.style.backgroundColor = "var(--grey)";
    } else {
       inputRestaurant.classList.remove("inputResaurantScrollled");
-      inpRest.classList.remove("grey");
+      inpRest.style.backgroundColor = "white";
+      inputRestaurant.style.backgroundColor = "white";
+      wrapperPapper.style.backgroundColor = "white";
    }
 }
 function getPos(el) {
@@ -40,3 +44,20 @@ function getPos(el) {
         lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);  
    return lx;
 }
+
+const clickToDrop = document.querySelector(".clickToDrop");
+const dropDownWrapper = document.querySelector(".dropDownWrapper")
+clickToDrop.addEventListener("click", function () {
+   dropDownWrapper.classList.toggle("showDrop")
+})
+
+
+document.addEventListener('click', function(event) {
+   const dropDownMenu = document.querySelector(".dropDownMenu");
+   const isClickInsideElement = dropDownMenu.contains(event.target);
+   if (!isClickInsideElement) {
+      dropDownWrapper.classList.remove('showDrop');
+      
+   }
+})
+;
