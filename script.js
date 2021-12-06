@@ -24,16 +24,14 @@ function attachRestSearch () {
    const inputPosition = inputRestaurant.getBoundingClientRect();
    const dostarczTerazBtn = document.querySelector('.dostarczTeraz');
    const dostarczTerazBtnPosition = dostarczTerazBtn.getBoundingClientRect();
-   console.log(dostarczTerazBtnPosition.top);
    if (inputPosition.top <= 26 && dostarczTerazBtnPosition.top < 26) {
       inputRestaurant.classList.add("inputResaurantScrollled");
       inpRest.style.backgroundColor = "var(--grey)";
-      inputRestaurant.style.backgroundColor = "var(--grey)";
+      
       wrapperPapper.style.backgroundColor = "var(--grey)";
    } else {
       inputRestaurant.classList.remove("inputResaurantScrollled");
       inpRest.style.backgroundColor = "white";
-      inputRestaurant.style.backgroundColor = "white";
       wrapperPapper.style.backgroundColor = "white";
    }
 }

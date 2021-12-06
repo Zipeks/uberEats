@@ -150,7 +150,6 @@ button {
 .mainImgCont {
    display: flex;
    height: 100vh;
-   background-color: #FFD7D2 ;
 }
 .mainSpacer {
    flex: 1 0 auto;
@@ -162,6 +161,9 @@ button {
    } 
    .mainimg1 {
       display: none;
+   }
+   .mainimg2 {
+      
    }
    
 }
@@ -250,7 +252,6 @@ button {
       padding: 5px 3%;
       max-width: 1024px;
       width: 94%;
-      background-color: var(--grey);
    }
    .restaurantSearch {
       padding: 0px 10px;
